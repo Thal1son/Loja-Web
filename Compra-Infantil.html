@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiseta Preta Basica Feminina l RS Imports</title>
+    <link rel="stylesheet" href="../Styles/Styles.css">
+    <link rel="icon" href="../Images/Icone-loja.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../Images/Icone-loja.png" class="logo" alt="logo">
+
+        <div class="nav-Links">
+            <ul>
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="Masculino.html">Masculino</a></li>
+                <li><a href="Feminino.html">Feminino</a></li>
+                <li><a href="Infantil.html">Infantil</a></li>
+            </ul>
+        </div>
+
+        <div class="icones">
+            <a href="Perfil.html">
+                <img src="../Images/Icone-Perfil.png" alt="Perfil" class="icon-img">
+            </a>
+            <a href="Carrinho.html">
+                <img src="../Images/carrinho-de-compras.png" alt="Carrinho" class="icon-img">
+            </a>
+        </div>
+    </nav>
+    
+    <div class="Compras-container">
+        <div class="Item-Principal">
+            <div class="Foto-principal"> 
+                <img src="../Images/Camiseta Bart.jpg" alt="Camiseta Bart" id="main-img">
+            </div>
+            <div class="Fotos-secundarias">
+                <img src="../Images/Camiseta Bart.jpg" alt="Camiseta" class="Secundarias" onclick="changeImage(this)">
+                <img src="../Images/Costas Bart.jpg" alt="Camiseta" class="Secundarias" onclick="changeImage(this)">
+            </div>
+        </div>
+        <div class="Detalhes">
+            <h1>Camiseta Bart Simpsons</h1>
+            <p class="Valor">R$ 50,00</p>
+            <p class="Descricao">
+                Esta camiseta divertida e colorida traz o icônico Bart Simpson estampado na frente, perfeito para os pequenos fãs de "Os Simpsons"! Feita em algodão macio e respirável, 
+                oferece conforto o dia todo. Ideal para passeios, brincadeiras ou para assistir à sua série favorita. Disponível em vários tamanhos, é uma escolha superdescontraída para o guarda-roupa das crianças.
+            </p>
+            
+            <div class="Tamanho">
+                <label for="Tamanho">Escolha o Tamanho:</label>
+                <select id="Tamanho" name="Tamanho">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+            </div>
+
+            <div class="Comprar">
+                <button class="Comprar-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Função para alterar a imagem principal
+        function changeImage(imgElement) {
+            const mainImg = document.getElementById('main-img');
+            mainImg.src = imgElement.src;
+        }
+    </script>
+</body>
+</html>
