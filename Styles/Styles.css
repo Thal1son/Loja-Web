@@ -1,0 +1,478 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  padding-bottom: 200px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content:space-between; 
+  padding: 10px 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 15px;
+  
+}
+.logo {
+  left: 30px;
+  width: 75px;
+  border-radius: 20px;
+}
+
+.icones {
+display: flex;
+gap: 15px;
+align-items: center;
+}
+
+.icon-img {
+width: 30px;
+height: 25px;
+cursor: pointer;
+transition: transform 0.2s ease;
+}
+
+.icon-img:hover {
+transform: scale(1.1);
+}
+
+  
+
+.nav-Links ul { /* UL mexe apenas nos links */
+  list-style-type: none; /* Remove os pontos dos links */
+  display: flex;
+  font-size: 150%; /* Tamanho dos links*/
+  gap: 45px;
+  font-size: 150%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nav-Links li {
+  margin-left: 45px;
+  align-items: center;
+  display: flex;
+}
+
+.nav-Links a {
+  color: rgb(0, 0, 0); /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  
+}
+
+
+
+h1{
+  color: #333;
+}
+
+.Container-camisetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;        
+  gap: 30px;               
+  padding: 50px;
+  
+  
+}
+
+.Camiseta {
+  border: 1px solid #ccc;
+  background: white;
+  margin: 50px;
+  padding: 15px;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Camiseta:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+}
+
+.Camiseta button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer; /* quando passar o mouse por cima altera o icone */
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.Camiseta button:hover {
+  background-color: #333;
+}
+
+.Camisetas {
+  border: 1px solid #ccc;
+  background: white;
+  margin: 50px;
+  padding: 15px;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Camisetas:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+}
+
+.Camisetas button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer; /* quando passar o mouse por cima altera o icone */
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.Camisetas button:hover {
+  background-color: #333;
+}
+
+
+
+.Container-Blusas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;        
+  gap: 30px;               
+  padding: 50px;
+  
+}
+
+.Blusas {
+  border: 1px solid #ccc;
+  background: white;
+  margin: 50px;
+  padding: 15px;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  
+}
+
+.Blusas button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer; /* quando passar o mouse por cima altera o icone */
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.Blusas button:hover {
+  background-color: #333;
+}
+
+h2 {
+  color: black;
+}
+
+form {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.dados {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+label {
+  width: 100px;
+  min-width: 100px;
+  padding-top: 6px;
+}
+
+input, select {
+  flex: 1;
+  padding: 5px;
+  min-width: 150px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 20px ;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.asterisco {
+  color: red;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  color: #FFD700; /* Dourado */
+  margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+}
+
+
+.social-links li {
+  list-style: none;
+  margin-bottom: 5px;
+
+}
+
+.Compras-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Item-Principal {
+  width: 45%;
+  top: 50px;
+}
+
+.Foto-principal img {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Fotos-secundarias {
+  align-items: center;
+  gap: 10px;
+}
+
+.Secundarias {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.Secundarias:hover {
+  transform: scale(1.1);
+}
+
+.Detalhes {
+  width: 45%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.Detalhes h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.Valor {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.Descrição {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.Tamanho {
+  margin-bottom: 20px;
+}
+
+.Tamanho select {
+  padding: 5px;
+  font-size: 15px;
+  width: 100%;
+  max-width: 120px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Comprar-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Comprar-button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  /* Navbar responsiva */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-Links ul {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 120%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-Links li {
+    margin-left: 0;
+  }
+
+  .icones {
+    align-self: flex-end;
+  }
+
+  /* Ajuste geral de containers */
+  .Container-camisetas,
+  .Container-Blusas {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .Camiseta,
+  .Camisetas,
+  .Blusas {
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .Compras-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .Item-Principal,
+  .Detalhes {
+    width: 100%;
+  }
+
+  /* Formulário */
+  .dados {
+    flex-direction: column;
+  }
+
+  label {
+    width: 100%;
+    min-width: unset;
+  }
+
+  input,
+  select {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .footer-column {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
